@@ -8,11 +8,7 @@ public class Reserva {
 	private ArrayList<Cliente> cliente = new ArrayList<Cliente>();
 	private ArrayList<Restaurante> restaurante = new ArrayList<Restaurante>();
 	
-	public Reserva(String data, ArrayList<Cliente> cliente, ArrayList<Restaurante> restaurante) {
-		this.data = data;
-		this.cliente = cliente;
-		this.restaurante = restaurante;
-	}
+	public Reserva(){}
 
 	public String getData() {
 		return data;
@@ -26,18 +22,16 @@ public class Reserva {
 		return cliente;
 	}
 
-	public void setCliente(ArrayList<Cliente> cliente) {
-		this.cliente = cliente;
+	public void setCliente(Cliente c) {
+		cliente.add(c);
 	}
 
 	public ArrayList<Restaurante> getRestaurante() {
 		return restaurante;
 	}
 
-	public void setRestaurante(ArrayList<Restaurante> restaurante) {
-		this.restaurante = restaurante;
+	public void setRestaurante(Restaurante r) {
+		restaurante.add(r);
 	}
-
-	
 
 }
