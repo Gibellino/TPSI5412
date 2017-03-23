@@ -2,6 +2,7 @@ package application;
 
 import java.util.ArrayList;
 
+import controller.GestaoReserva;
 import model.Reserva;
 
 public class Main {
@@ -11,6 +12,7 @@ public class Main {
 		
 		ArrayList<Reserva> r = new ArrayList<Reserva>();
 		
+		new GestaoReserva().addR(r);
 	}
 
 }

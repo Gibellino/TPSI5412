@@ -36,7 +36,7 @@ public class GestaoReserva {
 		String nome = read.nextLine();
 		
 		System.out.printf("Insira a morada do restaurante: ");
-		String morada = read.nextLine();
+		String morada = read.nextLine(); 
 		
 		System.out.printf("Insira o numero de telemovel do restaurante: ");
 		String contacto = read.nextLine();
